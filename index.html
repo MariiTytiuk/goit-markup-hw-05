@@ -573,15 +573,18 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+
+    <div class="backdrop is-open" >
     <div class="modal">
-      <button class="close-button" type="button" data-modal-close>
+      <button class="close-button" type="button" >
         <svg class="close-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
       <p class="modal-title">Leave your contacts and we will call you back</p>
-      <form class="order-form" name="order-form">
+
+      <form class="order-form" name="review">
+
         <div class="order-form-field">
           <label class="order-form-label" for="user-name">Name</label>
           <div class="order-form-inputbox">
@@ -590,15 +593,14 @@
               type="text"
               name="user-name"
               id="user-name"
-              required
-              autocomplete="off"
-              autofocus
+              minlength="3"
             />
             <svg class="order-form-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
         </div>
+
         <div class="order-form-field">
           <label class="order-form-label" for="user-phone">Phone</label>
           <div class="order-form-inputbox">
@@ -606,14 +608,13 @@
             class="order-form-input"
             type="tel"
             name="user-phone"
-            id="user-phone"
-            required
-            autocomplete="off"/>
+            id="user-phone">
             <svg class="order-form-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
         </div>
+
         <div class="order-form-field">
           <label class="order-form-label" for="user-email">Email</label>
           <div class="order-form-inputbox">
@@ -621,21 +622,21 @@
             class="order-form-input"
             type="email"
             name="user-email"
-            id="user-email"
-            required
-            autocomplete="off"/>
+            id="user-email">
             <svg class="order-form-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
         </div>
+
         <div class="order-form-comment-field">
           <label class="order-form-label" for="user-comment">Comment</label>
           <textarea 
           class="order-form-textarea"
           name="user-comment"
           id="user-comment"
-          placeholder="Text input">
+          placeholder="Text input"
+          rows="4">
         </textarea>
         </div>
         <div class="order-form-checkbox-field">
@@ -654,10 +655,10 @@
             <a class="order-form-policy" href="#">Privacy Policy</a>
           </label>
         </div>
+
         <button class="button-hero" type="submit">Send</button>
       </form>
     </div>
-  </div>
   </div>
   </body>
 </html>
