@@ -701,6 +701,8 @@ color: #434455;
 .order-form-input {
     height: 40px;
     padding-left: 38px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    outline: transparent; 
 }
 
 .order-form-comment-field {
@@ -713,6 +715,8 @@ color: #434455;
     line-height: 1.17;
     color: rgba(46, 47, 66, 0.4);
     resize: none;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    outline: transparent;
 }
 
 .order-form-textarea::placeholder {
