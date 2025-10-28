@@ -383,6 +383,10 @@ max-width: 264px;
     fill: #f4f4fd;
 }
 
+.social-media {
+    margin-right: auto;
+}
+
 .section-team{
     font-size: 36px;
     line-height: 1.11;
